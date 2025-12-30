@@ -1,0 +1,94 @@
+[
+	{
+		"id": 1,
+		"name": "Home",
+		"path": "/"
+	},
+	{
+		"id": 2,
+		"name": "Product",
+		"path": "/product/altras-1",
+		"submenu": [
+			{
+				"id": 1,
+				"name": "ALTRAS-1 Overview",
+				"path": "/product/altras-1"
+			},
+			{
+				"id": 2,
+				"name": "How It Works – ZRV",
+				"path": "/how-it-works"
+			},
+			{
+				"id": 3,
+				"name": "Technical Specifications",
+				"path": "/product/altras-1#specifications"
+			}
+		]
+	},
+	{
+		"id": 3,
+		"name": "Technology",
+		"path": "/technology"
+	},
+	{
+		"id": 4,
+		"name": "Safety & Compliance",
+		"path": "/safety"
+	},
+	{
+		"id": 5,
+		"name": "Solutions",
+		"path": "/solutions",
+		"submenu": [
+			{
+				"id": 1,
+				"name": "Hospital Administrators",
+				"path": "/solutions/hospital-administrators"
+			},
+			{
+				"id": 2,
+				"name": "Nursing Staff",
+				"path": "/solutions/nursing-staff"
+			},
+			{
+				"id": 3,
+				"name": "Biomedical Engineers",
+				"path": "/solutions/biomedical-engineers"
+			}
+		]
+	},
+	{
+		"id": 6,
+		"name": "Resources",
+		"path": "/resources/blogs",
+		"submenu": [
+			{
+				"id": 1,
+				"name": "Blogs",
+				"path": "/resources/blogs",
+				"badge": "NEW"
+			},
+			{
+				"id": 2,
+				"name": "Whitepapers",
+				"path": "/resources/whitepapers"
+			}
+		]
+	},
+	{
+		"id": 7,
+		"name": "About Us",
+		"path": "/about"
+	},
+	{
+		"id": 8,
+		"name": "Investors",
+		"path": "/investors"
+	},
+	{
+		"id": 9,
+		"name": "Contact",
+		"path": "/contact"
+	}
+]
