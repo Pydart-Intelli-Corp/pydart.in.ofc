@@ -13,6 +13,10 @@ import TestimonialsCarousel from "@/components/sections/testimonials/Testimonial
 import BackToTop from "@/components/shared/others/BackToTop";
 import SplashScreen from "@/components/shared/others/SplashScreen";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
+import ComingSoon from "./coming-soon/page";
+
+// 🎚️ TOGGLE CONTROL: Set to true for Coming Soon page, false for Main Landing page
+const SHOW_COMING_SOON = true;
 
 export const metadata = {
     title: "Pydart Intelli Corp - ALTRAS-1 Robotic Patient Transfer System",
@@ -20,6 +24,12 @@ export const metadata = {
 };
 
 export default function Home() {
+    // Show Coming Soon page if enabled
+    if (SHOW_COMING_SOON) {
+        return <ComingSoon />;
+    }
+
+    // Show Main Landing page
     return (
         <div>
             <SplashScreen />
