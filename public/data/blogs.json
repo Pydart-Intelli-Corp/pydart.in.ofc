@@ -1,0 +1,411 @@
+[
+	{
+		"id": 1,
+		"title": "The Future of Healthcare: How AI and Robotics Will Transform Patient Care in India",
+		"img": "/images/blog/blog-1.webp",
+		"img1": "/images/blog/blog-4.webp",
+		"img2": "/images/blog/blog-6.webp",
+		"img3": "/images/blog/h5-blog-1.webp",
+		"img4": "/images/blog/blog-thumb-1.webp",
+		"img5": "/images/blog/tj-blog-8.webp",
+		"img6": "/images/blog/tj-blog-8.webp",
+		"detailsImg": "/images/blog/tj-blog-1.webp",
+		"smallImg": "/images/blog/post-1.webp",
+		"desc": "As we stand at the intersection of artificial intelligence and healthcare robotics, India has a unique opportunity to leapfrog traditional healthcare infrastructure challenges. The convergence of AI, robotics, and IoT is not just about automation—it's about democratizing quality healthcare access across our diverse nation.",
+		"desc1": "India's healthcare system serves 1.4 billion people with a severe shortage of medical professionals. We have just 1 nurse for every 670 patients, compared to the WHO-recommended ratio of 1:300. This gap isn't just a statistic—it represents millions of overworked caregivers, delayed treatments, and preventable injuries. The future of Indian healthcare lies in intelligent automation that amplifies human capability rather than replacing it.",
+		"desc2": "At PyDart, we're building ALTRAS-1 with a vision that extends beyond patient transfers. We see a future where AI-powered robotic systems handle physically demanding tasks, allowing healthcare workers to focus on what they do best—providing compassionate, skilled care. Our Zero Relative Velocity technology is just the beginning. The next decade will see predictive AI systems that anticipate patient needs, robotic assistants that work seamlessly alongside nurses, and indigenous innovations that are affordable and accessible to tier-2 and tier-3 hospitals. India doesn't need to import expensive Western solutions—we need to build technology that understands our unique challenges: power fluctuations, space constraints, multilingual requirements, and budget realities. The future of healthcare robotics is Made in India, for India, and eventually, for the world.",
+		"date": "15 JAN 2026",
+		"date2": "Jan 15 2026",
+		"day": 15,
+		"month": "JAN",
+		"category": "Future of Healthcare",
+		"tags": ["AI", "Robotics", "Healthcare Innovation"],
+		"author_role": "Founder & CEO",
+		"author": "Tishnu Thankappan",
+		"status": "Vision",
+		"blogTopList": [
+			{
+				"iconName": "fa-light fa-user",
+				"name": "Admin",
+				"path": "#"
+			},
+			{
+				"iconName": "fa-light fa-calendar-days",
+				"name": "15 JAN 2026"
+			},
+			{
+				"iconName": "fa-light fa-comments",
+				"name": "Comment",
+				"path": "#"
+			}
+		],
+		"comments": [
+			{
+				"authorName": "Dr. Amit Patel",
+				"img": "/img/blog/user-1.jpg",
+				"date": "January 16, 2026",
+				"day": 16,
+				"month": "JAN",
+				"smallImg": "/images/blog/post-2.webp",
+				"desc": "As a hospital administrator in Pune, I completely agree with this vision. We desperately need affordable, indigenous healthcare robotics solutions that understand Indian hospital constraints.",
+				"replies": [
+					{
+						"authorName": "Tishnu Thankappan",
+						"img": "/img/blog/user-2.jpg",
+						"date": "January 17, 2026",
+						"day": 17,
+						"month": "JAN",
+						"smallImg": "/images/blog/post-2.webp",
+						"desc": "Thank you, Dr. Patel. This is exactly why we're focusing on practical deployment challenges from day one. ALTRAS-1 is designed specifically for Indian hospital environments."
+					}
+				]
+			},
+			{
+				"authorName": "Nurse Priya Singh",
+				"img": "/img/blog/user-4.jpg",
+				"date": "January 18, 2026",
+				"day": 18,
+				"month": "JAN",
+				"smallImg": "/images/blog/post-2.webp",
+				"desc": "Working in a government hospital, I see the nurse shortage crisis daily. Robotic assistance that helps with patient transfers would be a game-changer for our physical wellbeing and patient safety."
+			}
+		]
+	},
+	{
+		"id": 2,
+		"title": "Engineering Zero Relative Velocity: The Technical Journey Behind ALTRAS-1",
+		"img": "/images/blog/blog-2.webp",
+		"img1": "/images/blog/blog-5.webp",
+		"img2": "/images/blog/blog-7.webp",
+		"img3": "/images/blog/h5-blog-2.webp",
+		"img4": "/images/blog/h2-blog-2.webp",
+		"img5": "/images/blog/tj-blog-1.webp",
+		"img6": "/images/blog/tj-blog-2.webp",
+		"detailsImg": "/images/blog/tj-blog-2.webp",
+		"smallImg": "/images/blog/post-2.webp",
+		"desc": "Building a robotic patient transfer system that eliminates friction and shear forces required solving complex mechanical, electrical, and software challenges. Here's how we engineered Zero Relative Velocity technology from concept to prototype.",
+		"desc1": "The core innovation behind ALTRAS-1 is achieving Zero Relative Velocity between the patient and transfer surface. This means synchronized motion where friction forces approach zero, eliminating skin shear injuries and reducing transfer force requirements by over 90%. We achieved this through precision motor control, real-time sensor fusion, and adaptive algorithms that adjust to patient weight distribution.",
+		"desc2": "The mechanical design incorporates medical-grade rollers with variable speed control, pneumatic lifting systems with sub-millimeter precision, and a distributed load cell array that maps pressure points in real-time. Our electrical architecture uses redundant safety circuits, medical-grade isolation transformers, and a custom power management system that handles India's 170V-270V voltage fluctuations. The software stack combines computer vision for patient positioning, predictive algorithms for fall prevention, and a multilingual voice interface. Every component was tested for Indian hospital conditions—narrow corridors, high humidity, temperature extremes, and 24/7 operation cycles. The result is a system that's not just technically advanced, but practically deployable in real-world Indian healthcare settings.",
+		"date": "22 JAN 2026",
+		"date2": "Jan 22 2026",
+		"day": 22,
+		"month": "JAN",
+		"category": "Engineering",
+		"tags": ["Technology", "Engineering", "Innovation"],
+		"author_name": "Adwaith Raj",
+		"author_role": "Co-Founder & CTO",
+		"author": "Adwaith Raj",
+		"status": "Technical Deep Dive",
+		"isBlogQuote": false,
+		"iconId": "f10e",
+		"popupVideo": "https://www.youtube.com/watch?v=eEzD-Y97ges",
+		"blogTopList": [
+			{
+				"iconName": "fa-light fa-user",
+				"name": "Admin",
+				"path": "#"
+			},
+			{
+				"iconName": "fa-light fa-calendar-days",
+				"name": "22 JAN 2026"
+			},
+			{
+				"iconName": "fa-light fa-comments",
+				"name": "Comment",
+				"path": "#"
+			}
+		],
+		"comments": [
+			{
+				"authorName": "Prof. Rajesh Kumar",
+				"img": "/img/blog/user-1.jpg",
+				"date": "January 23, 2026",
+				"day": 23,
+				"month": "JAN",
+				"smallImg": "/images/blog/post-2.webp",
+				"desc": "Impressive engineering approach! The Zero Relative Velocity concept is brilliant. As a biomedical engineering professor, I'm particularly interested in the sensor fusion algorithms you've developed.",
+				"replies": [
+					{
+						"authorName": "Adwaith Raj",
+						"img": "/img/blog/user-2.jpg",
+						"date": "January 24, 2026",
+						"day": 24,
+						"month": "JAN",
+						"smallImg": "/images/blog/post-2.webp",
+						"desc": "Thank you, Professor Kumar! The sensor fusion was indeed one of our biggest challenges. We'd love to collaborate with academic institutions on further research."
+					}
+				]
+			},
+			{
+				"authorName": "Dr. Sarah Chen",
+				"img": "/img/blog/user-4.jpg",
+				"date": "January 25, 2026",
+				"day": 25,
+				"month": "JAN",
+				"smallImg": "/images/blog/post-2.webp",
+				"desc": "The focus on Indian infrastructure challenges is commendable. Power fluctuation handling and multilingual interfaces are often overlooked in imported medical devices."
+			}
+		]
+	},
+	{
+		"id": 3,
+		"title": "The Silent Crisis: Why Indian Healthcare Workers Need Robotic Assistance Now",
+		"img": "/images/blog/blog-3.webp",
+		"img1": "/images/blog/blog-4.webp",
+		"img2": "/images/blog/blog-8.webp",
+		"img3": "/images/blog/h5-blog-3.webp",
+		"img4": "/images/blog/h2-blog-3.webp",
+		"img5": "/images/blog/tj-blog-2.webp",
+		"img6": "/images/blog/tj-blog-1.webp",
+		"detailsImg": "/images/blog/tj-blog-3.webp",
+		"smallImg": "/images/blog/post-3.webp",
+		"desc": "As a pediatrician and medical advisor, I've witnessed firsthand the physical toll that manual patient handling takes on our nursing staff. Over 60% of nurses in Indian hospitals suffer from work-related musculoskeletal disorders, yet this crisis remains largely invisible to policymakers and hospital administrators.",
+		"desc1": "The numbers are staggering: India needs 2.4 million additional nurses by 2030, but we're losing experienced nurses to chronic back injuries, shoulder pain, and early retirement. A single patient transfer—repeated 10-15 times per shift—involves lifting forces equivalent to 40-150 kg. Without proper mechanical assistance, nurses are essentially performing heavy manual labor while simultaneously providing skilled medical care. The consequences extend beyond individual suffering. When a nurse is injured, hospitals face recruitment costs (₹2-4 lakhs), training periods (3-6 months), and productivity losses. More critically, patient safety suffers when understaffed units struggle to maintain care standards.",
+		"desc2": "ALTRAS-1 addresses this crisis through three key advantages: First, it eliminates manual lifting force entirely through Zero Relative Velocity technology, reducing injury risk by 93%. Second, it enables single-operator transfers, effectively multiplying nursing capacity in our understaffed hospitals. Third, it maintains continuous vital sign monitoring during transfers, closing the dangerous 'disconnect gap' when patients are moved between units. This isn't about replacing nurses—it's about protecting them. It's about ensuring that skilled healthcare professionals can focus on clinical decision-making, patient communication, and compassionate care rather than risking their health on physically demanding tasks that technology can handle better. The question isn't whether we can afford robotic assistance—it's whether we can afford not to implement it.",
+		"date": "28 JAN 2026",
+		"date2": "Jan 28 2026",
+		"day": 28,
+		"month": "JAN",
+		"category": "Healthcare Crisis",
+		"tags": ["Healthcare Workers", "Patient Safety", "Medical Innovation"],
+		"author_role": "Co-Founder & Medical Advisor",
+		"author": "Dr. Rinu Thankappan",
+		"status": "Medical Perspective",
+		"slider": [
+			"/images/blog/tj-blog-5.webp",
+			"/images/blog/tj-blog-6.webp",
+			"/images/blog/tj-blog-7.webp"
+		],
+		"blogTopList": [
+			{
+				"iconName": "fa-light fa-user",
+				"name": "Admin",
+				"path": "#"
+			},
+			{
+				"iconName": "fa-light fa-calendar-days",
+				"name": "28 JAN 2026"
+			},
+			{
+				"iconName": "fa-light fa-comments",
+				"name": "Comment",
+				"path": "#"
+			}
+		],
+		"comments": [
+			{
+				"authorName": "Sister Mary Joseph",
+				"img": "/img/blog/user-1.jpg",
+				"date": "January 30, 2026",
+				"day": 30,
+				"month": "JAN",
+				"smallImg": "/images/blog/post-2.webp",
+				"desc": "As a senior nurse at AIIMS, I can confirm these statistics are accurate. We desperately need solutions like ALTRAS-1. The physical strain of patient transfers is causing experienced nurses to leave the profession early.",
+				"replies": [
+					{
+						"authorName": "Dr. Rinu Thankappan",
+						"img": "/img/blog/user-2.jpg",
+						"date": "January 31, 2026",
+						"day": 31,
+						"month": "JAN",
+						"smallImg": "/images/blog/post-2.webp",
+						"desc": "Thank you for sharing your experience, Sister Mary. This is exactly why we're developing ALTRAS-1 — to protect healthcare workers like you who dedicate their lives to patient care."
+					}
+				]
+			},
+			{
+				"authorName": "Rajesh Kumar",
+				"img": "/img/blog/user-4.jpg",
+				"date": "February 1, 2026",
+				"day": 1,
+				"month": "FEB",
+				"smallImg": "/images/blog/post-2.webp",
+				"desc": "Hospital administrator here. The cost of nurse injuries and turnover is enormous. We're very interested in robotic solutions that can reduce these workplace injuries while maintaining quality patient care."
+			}
+		]
+	},
+	{
+		"id": 4,
+		"title": "From Prototype to Production: Building India's First Indigenous Medical Robotics Startup",
+		"img": "/images/blog/blog-video.webp",
+		"img1": "/images/blog/blog-5.webp",
+		"img2": "/images/blog/h2-blog-1.webp",
+		"img3": "/images/blog/h5-blog-1.webp",
+		"img4": "/images/blog/blog-thumb-1.webp",
+		"img5": "/images/blog/tj-blog-8.webp",
+		"img6": "/images/blog/tj-blog-1.webp",
+		"detailsImg": "/images/blog/tj-blog-4.webp",
+		"smallImg": "/images/blog/post-1.webp",
+		"desc": "The journey from concept to working prototype has been challenging, enlightening, and deeply rewarding. Building medical robotics in India means navigating regulatory frameworks, sourcing specialized components, and most importantly, understanding the ground realities of Indian hospitals that imported solutions often miss.",
+		"desc1": "When we started PyDart in Kerala, we knew we were entering uncharted territory. Medical robotics manufacturing in India is virtually non-existent—most hospitals import equipment at 2-3x markup costs. Our vision was clear: build world-class technology at Indian price points, designed specifically for Indian infrastructure. The challenges were immediate: medical-grade components aren't readily available in India, regulatory pathways for novel medical devices are complex, and convincing hospitals to trust a startup with patient safety is no small feat. But we had advantages too—Kerala's strong healthcare ecosystem, support from Kerala Startup Mission and Startup India, and most critically, direct access to healthcare workers who could tell us exactly what they needed.",
+		"desc2": "Our prototype development focuses on three core principles: First, ruggedization for Indian conditions—voltage fluctuations, high humidity, temperature extremes, and 24/7 operation capability. Second, affordability through indigenous manufacturing and smart component selection—targeting ₹80L-₹1.2Cr versus ₹2Cr+ for imports. Third, practical usability—multilingual interfaces, intuitive controls, and compatibility with existing hospital infrastructure. We're currently in advanced prototype testing, refining our Zero Relative Velocity algorithms and mechanical systems. The next phase involves controlled hospital trials, followed by regulatory submissions to CDSCO. Our roadmap includes clinical validation by late 2026, regulatory approval by mid-2026, and commercial launch by early 2027. It's a methodical journey, but we're building something that could transform healthcare for millions of Indians.",
+		"date": "05 FEB 2026",
+		"day": 5,
+		"month": "FEB",
+		"category": "Startup Journey",
+		"tags": ["Entrepreneurship", "Medical Devices", "Make in India"],
+		"author_role": "Founder & CEO",
+		"author": "Tishnu Thankappan",
+		"status": "Founder's Story",
+		"blogTopList": [
+			{
+				"iconName": "fa-light fa-user",
+				"name": "Admin",
+				"path": "#"
+			},
+			{
+				"iconName": "fa-light fa-calendar-days",
+				"name": "05 FEB 2026"
+			},
+			{
+				"iconName": "fa-light fa-comments",
+				"name": "Comment",
+				"path": "#"
+			}
+		],
+		"comments": [
+			{
+				"authorName": "Investor Suresh Nair",
+				"img": "/img/blog/user-1.jpg",
+				"date": "February 6, 2026",
+				"day": 6,
+				"month": "FEB",
+				"smallImg": "/images/blog/post-2.webp",
+				"desc": "Inspiring journey! The focus on indigenous manufacturing and Indian price points is exactly what our healthcare system needs. Looking forward to seeing ALTRAS-1 in hospitals nationwide.",
+				"replies": [
+					{
+						"authorName": "Tishnu Thankappan",
+						"img": "/img/blog/user-2.jpg",
+						"date": "February 7, 2026",
+						"day": 7,
+						"month": "FEB",
+						"smallImg": "/images/blog/post-2.webp",
+						"desc": "Thank you for the support, Suresh! Building for India requires understanding India's unique challenges and opportunities."
+					}
+				]
+			},
+			{
+				"authorName": "Dr. Kavitha Menon",
+				"img": "/img/blog/user-4.jpg",
+				"date": "February 8, 2026",
+				"day": 8,
+				"month": "FEB",
+				"smallImg": "/images/blog/post-2.webp",
+				"desc": "As someone who has worked with imported medical devices, I appreciate your focus on practical usability and Indian infrastructure compatibility. This is often overlooked by foreign manufacturers."
+			}
+		]
+	},
+	{
+		"id": 5,
+		"title": "Prototype Development: Early Testing and Future Roadmap for ALTRAS-1",
+		"img": "/images/project/project-4.webp",
+		"img1": "/images/blog/blog-thumb-1.webp",
+		"img2": "/images/blog/h2-blog-1.webp",
+		"img3": "/images/blog/h5-blog-2.webp",
+		"img4": "/images/blog/blog-thumb-1.webp",
+		"img5": "/images/blog/tj-blog-8.webp",
+		"img6": "/images/blog/tj-blog-1.webp",
+		"detailsImg": "/images/blog/tj-blog-5.webp",
+		"smallImg": "/images/blog/post-2.webp",
+		"desc": "Our ALTRAS-1 prototype has reached a crucial milestone in development. After months of laboratory testing and iterative design improvements, we're preparing for the next phase of controlled testing. Here's what we've learned and where we're headed.",
+		"desc1": "Our prototype testing has been conducted in controlled laboratory environments, simulating various hospital scenarios. We've tested the Zero Relative Velocity system with different patient weights (40-150kg), various bed heights, and multiple transfer scenarios. The mechanical systems have undergone stress testing for Indian conditions—power fluctuations, humidity levels up to 90%, and temperature ranges from 15°C to 45°C. Early results are promising: our algorithms successfully maintain synchronized motion, the pneumatic systems respond within milliseconds, and the multilingual voice interface recognizes commands in Malayalam, Hindi, Tamil, and English with 95% accuracy.",
+		"desc2": "The next phase involves controlled hospital demonstrations with healthcare professionals to gather feedback on usability and identify real-world challenges we haven't anticipated. We're planning partnerships with select hospitals in Kerala for supervised testing sessions. Our development roadmap includes: Q2 2026 - Controlled hospital demonstrations, Q3 2026 - Design refinements based on feedback, Q4 2026 - Pre-clinical safety testing, Q1 2026 - CDSCO regulatory submissions, Q2-Q3 2026 - Clinical trials, Q4 2026 - Manufacturing setup, Q1 2027 - Commercial launch. Each phase builds on learnings from the previous, ensuring ALTRAS-1 meets the practical needs of Indian healthcare environments while maintaining the highest safety standards.",
+		"date": "12 FEB 2026",
+		"day": 12,
+		"month": "FEB",
+		"category": "Prototype Development",
+		"tags": ["Prototype", "Testing", "Development Roadmap"],
+		"author_role": "Co-Founder & Medical Advisor",
+		"author": "Dr. Rinu Thankappan",
+		"status": "Development Update",
+		"blogTopList": [
+			{
+				"iconName": "fa-light fa-user",
+				"name": "Admin",
+				"path": "#"
+			},
+			{
+				"iconName": "fa-light fa-calendar-days",
+				"name": "12 FEB 2026"
+			},
+			{
+				"iconName": "fa-light fa-comments",
+				"name": "Comment",
+				"path": "#"
+			}
+		],
+		"comments": [
+			{
+				"authorName": "Dr. Anand Krishnan",
+				"img": "/img/blog/user-1.jpg",
+				"date": "February 13, 2026",
+				"day": 13,
+				"month": "FEB",
+				"smallImg": "/images/blog/post-2.webp",
+				"desc": "Exciting to see the systematic approach to prototype development! The focus on Indian conditions and multilingual support shows deep understanding of local requirements. Looking forward to the hospital demonstration phase.",
+				"replies": [
+					{
+						"authorName": "Dr. Rinu Thankappan",
+						"img": "/img/blog/user-2.jpg",
+						"date": "February 14, 2026",
+						"day": 14,
+						"month": "FEB",
+						"smallImg": "/images/blog/post-2.webp",
+						"desc": "Thank you, Dr. Krishnan! We believe thorough prototype testing is crucial before moving to clinical phases. Patient safety is our top priority, so we're taking a methodical approach."
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": 6,
+		"title": "Future Vision: The Potential Impact of ALTRAS-1 on Indian Healthcare",
+		"img": "/images/project/project-1.webp",
+		"img1": "/images/blog/blog-thumb-1.webp",
+		"img2": "/images/blog/h2-blog-1.webp",
+		"img3": "/images/blog/h5-blog-3.webp",
+		"img4": "/images/blog/blog-thumb-1.webp",
+		"img5": "/images/blog/tj-blog-8.webp",
+		"img6": "/images/blog/tj-blog-1.webp",
+		"detailsImg": "/images/blog/tj-blog-6.webp",
+		"smallImg": "/images/blog/post-3.webp",
+		"desc": "While ALTRAS-1 is still in prototype development, we envision a future where robotic patient transfer systems become standard in Indian hospitals. Here's our vision for the transformative impact this technology could have on healthcare delivery across India.",
+		"desc1": "Imagine a future where every Indian hospital—from tier-1 metros to rural district hospitals—has access to robotic patient transfer systems. ALTRAS-1 could reduce nurse injuries by up to 90%, allowing experienced healthcare workers to remain in the profession longer. With India's current nurse shortage of 2.4 million, preventing even 10% of injury-related departures could save the healthcare system thousands of skilled professionals. The economic impact extends beyond injury prevention: reduced worker compensation claims, lower recruitment costs, improved patient throughput, and enhanced care quality.",
+		"desc2": "Our long-term vision includes expanding beyond patient transfers to comprehensive robotic healthcare assistance. Future versions could integrate with hospital information systems, provide real-time patient monitoring during transport, and even assist with medication delivery. The modular design of ALTRAS-1 allows for upgrades and additional functionalities. We envision a network of indigenous medical robotics companies emerging in India, creating an ecosystem that serves not just Indian hospitals but exports affordable healthcare robotics globally. The prototype we're developing today could be the foundation for India becoming a global leader in accessible medical robotics technology.",
+		"date": "19 FEB 2026",
+		"day": 19,
+		"month": "FEB",
+		"category": "Future Vision",
+		"tags": ["Future Impact", "Healthcare Transformation", "Vision"],
+		"author_role": "Co-Founder & CTO",
+		"author": "Adwaith Raj",
+		"status": "Vision Statement",
+		"blogTopList": [
+			{
+				"iconName": "fa-light fa-user",
+				"name": "Admin",
+				"path": "#"
+			},
+			{
+				"iconName": "fa-light fa-calendar-days",
+				"name": "19 FEB 2026"
+			},
+			{
+				"iconName": "fa-light fa-comments",
+				"name": "Comment",
+				"path": "#"
+			}
+		],
+		"comments": [
+			{
+				"authorName": "Regulatory Expert Priya Nair",
+				"img": "/img/blog/user-1.jpg",
+				"date": "February 20, 2026",
+				"day": 20,
+				"month": "FEB",
+				"smallImg": "/images/blog/post-2.webp",
+				"desc": "Inspiring vision for the future of Indian healthcare! The potential for indigenous medical robotics to transform not just patient care but also create a new industry sector is exciting. Rooting for PyDart's success!"
+			}
+		]
+	}
+]

@@ -2,9 +2,9 @@
 import { useState } from "react";
 
 export default function useActiveIndex(defaultIndex = 0) {
-	const [activeIndex, setActiveIndex] = useState(defaultIndex);
-	const hadleAcitiveIndex = index => {
-		setActiveIndex(index);
-	};
-	return { activeIndex, setActiveIndex, hadleAcitiveIndex };
+    const [activeIndex, setActiveIndex] = useState(defaultIndex);
+    const hadleAcitiveIndex = index => {
+        setActiveIndex(index);
+    };
+    return { activeIndex, setActiveIndex, hadleAcitiveIndex };
 }

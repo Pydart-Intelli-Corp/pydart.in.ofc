@@ -1,7 +1,7 @@
-import Footer from "@/components/layout/footer/Footer";
+import FooterBasic from "@/components/layout/footer/FooterBasic";
 import Header from "@/components/layout/header/Header";
-import Brands1 from "@/components/sections/brands/Brands1";
-import Contact2 from "@/components/sections/contacts/Contact2";
+import BrandsBasic from "@/components/sections/brands/BrandsBasic";
+import ContactForm from "@/components/sections/contacts/ContactForm";
 import Cta from "@/components/sections/cta/Cta";
 import HeroInner from "@/components/sections/hero/HeroInner";
 import PricingPlan from "@/components/sections/pricing-plan/PricingPlan";
@@ -10,27 +10,27 @@ import BackToTop from "@/components/shared/others/BackToTop";
 import HeaderSpace from "@/components/shared/others/HeaderSpace";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 export default function Services() {
-	return (
-		<div>
-			<BackToTop />
-			<Header />
-			<Header isStickyHeader={true} />
-			<div id="smooth-wrapper">
-				<div id="smooth-content">
-					<main>
-						<HeaderSpace />
-						<HeroInner title={"Services"} text={"Services"} />
-						<ServicesPrimary />
-						<Contact2 />
-						<PricingPlan type={3} />
-						<Brands1 type={2} />
-						<Cta />
-					</main>
-					<Footer />
-				</div>
-			</div>
+    return (
+        <div>
+            <BackToTop />
+            <Header />
+            <Header isStickyHeader={true} />
+            <div id="smooth-wrapper">
+                <div id="smooth-content">
+                    <main>
+                        <HeaderSpace />
+                        <HeroInner title={"Services"} text={"Services"} />
+                        <ServicesPrimary />
+                        <ContactForm />
+                        <PricingPlan type={3} />
+                        <BrandsBasic type={2} />
+                        <Cta />
+                    </main>
+                    <FooterBasic />
+                </div>
+            </div>
 
-			<ClientWrapper />
-		</div>
-	);
+            <ClientWrapper />
+        </div>
+    );
 }

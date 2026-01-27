@@ -1,4 +1,4 @@
-import Footer from "@/components/layout/footer/Footer";
+import FooterBasic from "@/components/layout/footer/FooterBasic";
 import Header from "@/components/layout/header/Header";
 import BlogMain from "@/components/layout/main/BlogMain";
 import Cta from "@/components/sections/cta/Cta";
@@ -7,22 +7,22 @@ import HeaderSpace from "@/components/shared/others/HeaderSpace";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 
 export default function Blogs() {
-	return (
-		<div>
-			<BackToTop />
-			<Header />
-			<Header isStickyHeader={true} />
-			<div id="smooth-wrapper">
-				<div id="smooth-content">
-					<main>
-						<HeaderSpace />
-						<BlogMain />
-						<Cta />
-					</main>
-					<Footer />
-				</div>
-			</div>
-			<ClientWrapper />
-		</div>
-	);
+    return (
+        <div>
+            <BackToTop />
+            <Header />
+            <Header isStickyHeader={true} />
+            <div id="smooth-wrapper">
+                <div id="smooth-content">
+                    <main>
+                        <HeaderSpace />
+                        <BlogMain />
+                        <Cta />
+                    </main>
+<FooterBasic />
+                </div>
+            </div>
+            <ClientWrapper />
+        </div>
+    );
 }

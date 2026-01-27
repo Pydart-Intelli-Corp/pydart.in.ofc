@@ -17,31 +17,31 @@ import "./assets/css/odometer-theme-default.css";
 import "./globals.scss";
 
 const bodyFont = Mona_Sans({
-	variable: "--tj-ff-body",
-	subsets: ["latin"],
-	weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
-	style: ["normal", "italic"],
-	display: "swap",
+    variable: "--tj-ff-body",
+    subsets: ["latin"],
+    weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
+    style: ["normal", "italic"],
+    display: "swap",
 });
 const headingFont = Mona_Sans({
-	variable: "--tj-ff-heading",
-	subsets: ["latin"],
-	weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
-	style: ["normal", "italic"],
-	display: "swap",
+    variable: "--tj-ff-heading",
+    subsets: ["latin"],
+    weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
+    style: ["normal", "italic"],
+    display: "swap",
 });
 
 export const metadata = {
-	title: "Pydart Intelli Corp - Transforming Patient Care Through Robotics",
-	description: "ALTRAS-1 is an AI-powered robotic patient transfer system designed to eliminate manual lifting, reduce caregiver injuries, and ensure dignified, frictionless patient movement across hospital environments.",
+    title: "Pydart Intelli Corp - Transforming Patient Care Through Robotics",
+    description: "ALTRAS-1 is an AI-powered robotic patient transfer system designed to eliminate manual lifting, reduce caregiver injuries, and ensure dignified, frictionless patient movement across hospital environments.",
 };
 
 export default function RootLayout({ children }) {
-	return (
-		<html lang="en" data-scroll-behavior="smooth" dir="ltr">
-			<body className={`${bodyFont.variable} ${headingFont.variable}`}>
-				{children}
-			</body>
-		</html>
-	);
+    return (
+        <html lang="en" data-scroll-behavior="smooth" dir="ltr">
+            <body className={`${bodyFont.variable} ${headingFont.variable}`}>
+                {children}
+            </body>
+        </html>
+    );
 }

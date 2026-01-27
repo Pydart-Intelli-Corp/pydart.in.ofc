@@ -4,14 +4,14 @@ import ProductTagsWidget from "./widgets/ProductTagsWidget";
 import RecentProducctWidget from "./widgets/RecentProducctWidget";
 
 const ShopSidebar = () => {
-	return (
-		<div className="tj-shop-sidebar">
-			<PriceReangeWidget />
-			<ProductCategoriesWidget />
-			<RecentProducctWidget />
-			<ProductTagsWidget />
-		</div>
-	);
+    return (
+        <div className="tj-shop-sidebar">
+            <PriceReangeWidget />
+            <ProductCategoriesWidget />
+            <RecentProducctWidget />
+            <ProductTagsWidget />
+        </div>
+    );
 };
 
 export default ShopSidebar;

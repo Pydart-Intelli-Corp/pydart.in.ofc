@@ -2,7 +2,7 @@
 project: Pydart Intelli Corp Website
 content_type: master_document
 version: 1.2
-last_updated: 2025-12-30
+last_updated: 2026-12-30
 language: en-IN
 status: Prototype Development Stage
 ---
@@ -438,7 +438,7 @@ Modular components, diagnostics, and locally available parts ensure long-term se
 
 ## Engineering the Future of Compassionate Care
 
-Founded in 2025 in Kochi, Kerala, Pydart Intelli Corp bridges advanced robotics with real-world clinical needs. We're building what India needs - not importing what the West sells.
+Founded in 2026 in Kochi, Kerala, Pydart Intelli Corp bridges advanced robotics with real-world clinical needs. We're building what India needs - not importing what the West sells.
 
 ---
 
@@ -552,7 +552,7 @@ India's healthcare robotics market is projected to reach USD 1.5 billion by 2028
 ---
 
 ## Roadmap
-**2025:** Prototype development, design validation  
+**2026:** Prototype development, design validation  
 **2026:** Clinical trials, CDSCO approval process  
 **2027:** Pilot deployments, manufacturing setup  
 **2028:** Commercial launch, 50 unit target  
@@ -584,7 +584,7 @@ India's healthcare robotics market is projected to reach USD 1.5 billion by 2028
 
 We're in the prototype development stage and looking for partners who share our vision of transforming Indian healthcare.
 
-**Email:** info@pydart.in  
+**Email:** info@pydart.com  
 **Phone:** +91 XXXXXXXXXX  
 **Location:** Kochi, Kerala, India
 
@@ -632,7 +632,7 @@ For interviews, stories, and press materials.
 - FAQs
 
 ## Contact
-- Email: info@pydart.in
+- Email: info@pydart.com
 - Phone: +91 XXXXXXXXXX
 - Kochi, Kerala, India
 
@@ -649,7 +649,7 @@ For interviews, stories, and press materials.
 ## Footer CTA
 **Partner With Us - Join India's Healthcare Revolution**
 
-Copyright 2025 Pydart Intelli Corp Pvt. Ltd. All rights reserved.  
+Copyright 2026 Pydart Intelli Corp Pvt. Ltd. All rights reserved.  
 Made with Love in Kerala, India
 
 ---
