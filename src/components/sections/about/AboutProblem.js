@@ -15,16 +15,16 @@ const AboutProblem = () => {
                         >
                             <div className="about-content">
                                 <div className="sec-heading style-2">
-                                <span className="sub-title">The Problem</span>
-                                <h2 className="sec-title title-highlight">
-                                    The Silent Crisis in Indian Healthcare
-                                </h2>
-                                <p>
-                                    India has 1 nurse for every 670 patients — far below the{' '}
-                                    <a href="https://www.who.int/data/gho/data/themes/topics/health-workforce" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--tj-color-theme-primary)', textDecoration: 'underline' }}>
-                                        WHO recommendation of 1:300
-                                    </a>. Manual patient transfers cause over 50% of musculoskeletal injuries among healthcare workers. In a nation striving to become a global healthcare leader, our caregivers deserve better tools.
-                                </p>
+                                    <span className="sub-title">The Problem</span>
+                                    <h2 className="sec-title title-highlight">
+                                        The Silent Crisis in Indian Healthcare
+                                    </h2>
+                                    <p>
+                                        India has 1 nurse for every 670 patients — far below the{' '}
+                                        <a href="https://www.who.int/data/gho/data/themes/topics/health-workforce" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--tj-color-theme-primary)', textDecoration: 'underline' }}>
+                                            WHO recommendation of 1:300
+                                        </a>. Manual patient transfers cause over 50% of musculoskeletal injuries among healthcare workers. In a nation striving to become a global healthcare leader, our caregivers deserve better tools.
+                                    </p>
                                 </div>
                                 <div className="wow fadeInUp" data-wow-delay=".3s">
                                     <ButtonPrimary
@@ -86,9 +86,9 @@ const AboutProblem = () => {
                             <div className="count-inner">
                                 <span className="count-text">Nursing MSD Rate</span>
                                 <FunfactSingle currentValue={60} symbol="%+" />
-                                <a 
-                                    href="https://www.ijoem.com/" 
-                                    target="_blank" 
+                                <a
+                                    href="https://www.ijoem.com/"
+                                    target="_blank"
                                     rel="noopener noreferrer"
                                     className="source-link"
                                     style={{ fontSize: '11px', color: 'var(--tj-color-theme-primary)', display: 'block', marginTop: '5px' }}
@@ -110,9 +110,9 @@ const AboutProblem = () => {
                             <div className="count-inner">
                                 <span className="count-text">Nursing Shortage</span>
                                 <FunfactSingle currentValue={600000} symbol="+" />
-                                <a 
-                                    href="https://www.niti.gov.in/" 
-                                    target="_blank" 
+                                <a
+                                    href="https://www.niti.gov.in/"
+                                    target="_blank"
                                     rel="noopener noreferrer"
                                     className="source-link"
                                     style={{ fontSize: '11px', color: 'var(--tj-color-theme-primary)', display: 'block', marginTop: '5px' }}
@@ -134,9 +134,9 @@ const AboutProblem = () => {
                             <div className="count-inner">
                                 <span className="count-text">Nurse:Patient Ratio</span>
                                 <FunfactSingle currentValue={1} symbol=":670" />
-                                <a 
-                                    href="https://main.mohfw.gov.in/" 
-                                    target="_blank" 
+                                <a
+                                    href="https://main.mohfw.gov.in/"
+                                    target="_blank"
                                     rel="noopener noreferrer"
                                     className="source-link"
                                     style={{ fontSize: '11px', color: 'var(--tj-color-theme-primary)', display: 'block', marginTop: '5px' }}

@@ -15,7 +15,7 @@ const Header = ({
     topbarType = 1,
     isStickyHeader = false,
 }) => {
-    const [isSearchOpen, setIsSearchOpen] = useState(false);
+
     const [isContactOpen, setIsContactOpen] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const isSticky = useIsSticky(isStickyHeader);
@@ -41,13 +41,7 @@ const Header = ({
             />
             {/* <!-- end: Offcanvas Menu --> */}
 
-            {/* Search Popup --> */}
-            <div
-                className={`search-popup-overlay ${
-                    isSearchOpen ? "search-popup-overlay-open" : ""
-                }`}
-                onClick={() => setIsSearchOpen(false)}
-            ></div>
+
             <header
                 className={`header-area ${
                     headerType === 10
@@ -105,46 +99,7 @@ const Header = ({
                                     ) : headerType === 5 ? (
                                         ""
                                     ) : (
-                                        <div className="header-search">
-                                            <button
-                                                className={`search  ${
-                                                    isSearchOpen ? "search-hide" : ""
-                                                }`}
-                                                onClick={() => setIsSearchOpen(true)}
-                                            >
-                                                <i className="tji-search"></i>
-                                            </button>
-                                            <button
-                                                type="button"
-                                                className={`search_close_btn ${
-                                                    isSearchOpen ? "close-show" : ""
-                                                }`}
-                                                onClick={() => setIsSearchOpen(false)}
-                                            >
-                                                <svg
-                                                    width="18"
-                                                    height="18"
-                                                    viewBox="0 0 18 18"
-                                                    fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                >
-                                                    <path
-                                                        d="M17 1L1 17"
-                                                        stroke="currentColor"
-                                                        strokeWidth="1.5"
-                                                        strokeLinecap="round"
-                                                        strokeLinejoin="round"
-                                                    />
-                                                    <path
-                                                        d="M1 1L17 17"
-                                                        stroke="currentColor"
-                                                        strokeWidth="1.5"
-                                                        strokeLinecap="round"
-                                                        strokeLinejoin="round"
-                                                    />
-                                                </svg>
-                                            </button>
-                                        </div>
+                                        ""
                                     )}
                                     {headerType !== 5 ? (
                                         <div className="header-button">
@@ -183,34 +138,7 @@ const Header = ({
                     </div>
                 </div>
 
-                {/* <!-- Search Popup --> */}
-                <div className={`search_popup ${isSearchOpen ? "search-opened" : ""}`}>
-                    <div className="container">
-                        <div className="row justify-content-center">
-                            <div className="col-8">
-                                <div className="tj_search_wrapper">
-                                    <div className="search_form">
-                                        <form action="#">
-                                            <div className="search_input">
-                                                <div className="search-box">
-                                                    <input
-                                                        className="search-form-input"
-                                                        type="text"
-                                                        placeholder="Type Words and Hit Enter"
-                                                        required
-                                                    />
-                                                    <button type="submit">
-                                                        <i className="tji-search"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </header>
         </>
     );

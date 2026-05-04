@@ -27,19 +27,19 @@ const Process = () => {
                     <div className="col-12">
                         <div className="sec-heading-wrap">
                             <span className="sub-title wow fadeInUp" data-wow-delay=".3s">
-                            Safety by Design
-                        </span>
-                        <div className="heading-wrap-content">
-                            <div className="sec-heading style-2">
-                                <h2 className="sec-title text-anim">
-                                    Built for Zero-Failure <span style={{ color: 'var(--tj-color-theme-primary)' }}>Healthcare.</span>
-                                </h2>
-                            </div>
-                            <p className="desc wow fadeInUp" data-wow-delay=".5s">
-                                Safety is embedded into every mechanical, electrical, and software layer of ALTRAS-1 with continuous monitoring and AI-based risk management.
-                            </p>
-                            <div className="btn-wrap wow fadeInUp" data-wow-delay=".6s">
-                                <ButtonPrimary text={"Safety & Compliance"} url={"/safety"} />
+                                Safety by Design
+                            </span>
+                            <div className="heading-wrap-content">
+                                <div className="sec-heading style-2">
+                                    <h2 className="sec-title text-anim">
+                                        Built for Zero-Failure <span style={{ color: 'var(--tj-color-theme-primary)' }}>Healthcare.</span>
+                                    </h2>
+                                </div>
+                                <p className="desc wow fadeInUp" data-wow-delay=".5s">
+                                    Safety is embedded into every mechanical, electrical, and software layer of ALTRAS-1 with continuous monitoring and AI-based risk management.
+                                </p>
+                                <div className="btn-wrap wow fadeInUp" data-wow-delay=".6s">
+                                    <ButtonPrimary text={"Safety & Compliance"} url={"/safety"} />
                                 </div>
                             </div>
                         </div>
@@ -50,12 +50,12 @@ const Process = () => {
                         <div className="working-process-area">
                             {process?.length
                                 ? process?.map((processSingle, idx) => (
-                                        <ProcessCard
-                                            key={idx}
-                                            processSingle={processSingle}
-                                            idx={idx}
-                                        />
-                                  ))
+                                    <ProcessCard
+                                        key={idx}
+                                        processSingle={processSingle}
+                                        idx={idx}
+                                    />
+                                ))
                                 : ""}
                         </div>
                     </div>

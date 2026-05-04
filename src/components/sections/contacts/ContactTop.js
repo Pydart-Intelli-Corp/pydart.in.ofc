@@ -16,22 +16,22 @@ const ContactTop = () => {
                         </div>
                     </div>
                 </div>
-                <div className="row row-gap-4">
-                    <div className="col-xl-3 col-lg-6 col-sm-6">
+                <div className="row row-gap-4 justify-content-center align-items-stretch">
+                    <div className="col-xl-4 col-lg-6 col-sm-6 d-flex">
                         <div
-                            className="contact-item style-2 wow fadeInUp"
+                            className="contact-item style-2 wow fadeInUp w-100"
                             data-wow-delay=".3s"
                         >
                             <div className="contact-icon">
                                 <i className="tji-location-3"></i>
                             </div>
                             <h3 className="contact-title">Our Location</h3>
-                            <p>993 Renner Burg, West Rond, MT 94251-030</p>
+                            <p>Kerala Technology Innovation Zone, Kinfra Hi-Tech Park Main Rd, HMT Colony, P.O, Kalamassery, Kochi, Kerala 683503</p>
                         </div>
                     </div>
-                    <div className="col-xl-3 col-lg-6 col-sm-6">
+                    <div className="col-xl-4 col-lg-6 col-sm-6 d-flex">
                         <div
-                            className="contact-item style-2 wow fadeInUp"
+                            className="contact-item style-2 wow fadeInUp w-100"
                             data-wow-delay=".5s"
                         >
                             <div className="contact-icon">
@@ -40,17 +40,20 @@ const ContactTop = () => {
                             <h3 className="contact-title">Email us</h3>
                             <ul className="contact-list">
                                 <li>
-                                    <Link href="mailto:support@bexon.com">support@bexon.com</Link>
-                                </li>
-                                <li>
-                                    <Link href="mailto:info@bexon.com">info@bexon.com</Link>
+                                    <a
+                                        href="https://mail.google.com/mail/?view=cm&fs=1&to=info%40pydart.com"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        info@pydart.com
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div className="col-xl-3 col-lg-6 col-sm-6">
+                    <div className="col-xl-4 col-lg-6 col-sm-6 d-flex">
                         <div
-                            className="contact-item style-2 wow fadeInUp"
+                            className="contact-item style-2 wow fadeInUp w-100"
                             data-wow-delay=".7s"
                         >
                             <div className="contact-icon">
@@ -59,31 +62,7 @@ const ContactTop = () => {
                             <h3 className="contact-title">Call us</h3>
                             <ul className="contact-list">
                                 <li>
-                                    <Link href="tel:10095447818">+1 (009) 544-7818</Link>
-                                </li>
-                                <li>
-                                    <Link href="tel:10098801810">+1 (009) 880-1810</Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="col-xl-3 col-lg-6 col-sm-6">
-                        <div
-                            className="contact-item style-2 wow fadeInUp"
-                            data-wow-delay=".9s"
-                        >
-                            <div className="contact-icon">
-                                <i className="tji-chat"></i>
-                            </div>
-                            <h3 className="contact-title">Live chat</h3>
-                            <ul className="contact-list">
-                                <li>
-                                    <Link href="mailto:livechat@bexon.com">
-                                        livechat@bexon.com
-                                    </Link>
-                                </li>
-                                <li className="active">
-                                    <Link href="/contact">Need help?</Link>
+                                    <Link href="tel:7356765036">7356765036</Link>
                                 </li>
                             </ul>
                         </div>

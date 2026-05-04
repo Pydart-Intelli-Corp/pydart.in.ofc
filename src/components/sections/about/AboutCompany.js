@@ -1,8 +1,7 @@
-import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
 import Image from "next/image";
 const AboutCompany = ({ type }) => {
     return (
-        <section className="tj-about-section-2 section-gap section-gap-x">
+        <section id="about-pydart" className="tj-about-section-2 section-gap section-gap-x" style={{ scrollMarginTop: "120px" }}>
             <div className="container">
                 <div className="row">
                     <div className="col-xl-6 col-lg-6 order-lg-1 order-2">
@@ -65,26 +64,15 @@ const AboutCompany = ({ type }) => {
                                 </h2>
                             </div>
                         </div>
-                        <div className="about-bottom-area">
+                        <div className="about-bottom-area" id="mission" style={{ scrollMarginTop: "120px" }}>
                             <div
                                 className="mission-vision-box wow fadeInLeft"
                                 data-wow-delay=".5s"
                             >
                                 <h4 className="title">Our Mission</h4>
                                 <p className="desc">
-                                To eliminate preventable injuries and restore dignity to patient movement through intelligent robotics.
-                            </p>
-                            <ul className="list-items">
-                                <li>
-                                    <i className="tji-list"></i>Zero Caregiver Injuries
-                                </li>
-                                <li>
-                                    <i className="tji-list"></i>Patient Safety First
-                                </li>
-                                <li>
-                                    <i className="tji-list"></i>Clinical Excellence
-                                    </li>
-                                </ul>
+                                    To design intelligent robotic systems that enhance human capability, improve safety, and enable efficient automation across critical environments.
+                                </p>
                             </div>
                             <div
                                 className="mission-vision-box wow fadeInRight"
@@ -92,23 +80,66 @@ const AboutCompany = ({ type }) => {
                             >
                                 <h4 className="title">Our Vision</h4>
                                 <p className="desc">
-                                To become a global leader in intelligent healthcare logistics and patient handling systems.
-                            </p>
-                            <ul className="list-items">
-                                <li>
-                                    <i className="tji-list"></i>Global Leadership
-                                </li>
-                                <li>
-                                    <i className="tji-list"></i>Transform Healthcare
-                                </li>
-                                <li>
-                                    <i className="tji-list"></i>Sustainable Innovation
+                                    To build a future where intelligent robotic systems support human work across healthcare, infrastructure, and industry. Pydart aims to create scalable robotics platforms that combine automation, artificial intelligence, and system integration to transform complex operational environments.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="row row-gap-4" style={{ marginTop: "60px" }}>
+                    <div className="col-lg-6 col-sm-12 order-1">
+                        <div
+                            className="about-content-area-2 wow fadeInUp"
+                            data-wow-delay=".1s"
+                        >
+                            <div className="about-content">
+                                <div className="sec-heading style-2">
+                                    <h2 className="sec-title title-highlight">
+                                        A Deep-Technology Robotics Company
+                                    </h2>
+                                    <p>
+                                        Pydart Intellicorp builds intelligent automated systems that combine mechanical engineering, artificial intelligence and real-world operational intelligence. Our integrated robotic platforms are designed to assist human workflows, improve safety, and enable scalable automation across industries — practical, reliable and accessible for real-world deployment.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-6 col-md-12 order-2">
+                        <div
+                            className="customers-box style-2 wow fadeInUp"
+                            data-wow-delay=".2s"
+                        >
+                            <div
+                                className="customers-bg"
+                                style={{ backgroundImage: "url('/images/about/about-4.webp')" }}
+                            ></div>
+                            <div className="customers">
+                                <ul>
+                                    <li className="wow fadeInLeft" data-wow-delay=".3s">
+                                        <img src="/images/testimonial/client-1.webp" alt="" />
+                                    </li>
+                                    <li className="wow fadeInLeft" data-wow-delay=".4s">
+                                        <img src="/images/testimonial/client-2.webp" alt="" />
+                                    </li>
+                                    <li className="wow fadeInLeft" data-wow-delay=".5s">
+                                        <img src="/images/testimonial/client-3.webp" alt="" />
+                                    </li>
+                                    <li className="wow fadeInLeft" data-wow-delay=".6s">
+                                        <span>
+                                            <i className="tji-plus"></i>
+                                        </span>
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                        <div className="about-btn-area wow fadeInUp" data-wow-delay=".5s">
-                            <ButtonPrimary text={"Learn More About Us"} url={"/about"} />
+                            <h6
+                                className="customers-text wow fadeInLeft"
+                                data-wow-delay=".6s"
+                            >
+                                Building the next generation of intelligent robotic infrastructure with trusted partners.
+                            </h6>
+                            <div className="star-icon zoomInOut">
+                                <img src="/images/shape/star.svg" alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>

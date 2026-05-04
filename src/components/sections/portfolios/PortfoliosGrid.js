@@ -9,7 +9,7 @@ const PortfoliosGrid = () => {
     const portfolio = [...portfolioTShow, ...portfolioTShow];
 
     return null; // Section hidden
-    
+
     /* Hidden section
     return (
         <section className="tj-project-section-2 section-gap">

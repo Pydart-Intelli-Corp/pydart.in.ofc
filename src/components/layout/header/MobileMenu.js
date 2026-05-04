@@ -38,20 +38,20 @@ const MobileMenu = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
                             <div className="contact-info">
                                 <div className="contact-item">
                                     <span className="subtitle">Phone</span>
-                                    <Link className="contact-link" href="tel:+919876543210">
-                                        +91 98765 43210
+                                    <Link className="contact-link" href="tel:+917356765036">
+                                        +91 7356765036
                                     </Link>
                                 </div>
                                 <div className="contact-item">
                                     <span className="subtitle">Email</span>
-                                    <Link className="contact-link" href="mailto:info@pydart.com">
-                                        info@pydart.com
-                                    </Link>
+                                    <a className="contact-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=info%40pydart.com" target="_blank" rel="noopener noreferrer">
+                                        Info@pydart.com
+                                    </a>
                                 </div>
                                 <div className="contact-item">
                                     <span className="subtitle">Location</span>
                                     <span className="contact-link">
-                                        Kochi, Kerala, India
+                                        Kerala Technology Innovation Zone, Kinfra Hi-Tech Park Main Rd, HMT Colony, P.O, Kalamassery, Kochi, Kerala 683503
                                     </span>
                                 </div>
                             </div>

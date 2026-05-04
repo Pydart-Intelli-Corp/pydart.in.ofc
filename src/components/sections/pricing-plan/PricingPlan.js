@@ -18,20 +18,22 @@ const PricingPlan = ({ type = 1 }) => {
                         >
                             <span className="sub-title wow fadeInUp" data-wow-delay=".3s">
                                 {type === 2 || type === 3 ? <i className="tji-box"></i> : ""}{" "}
-                                Solutions
+                                {type === 3 ? "Business Model" : "Solutions"}
                             </span>
                             <h2
                                 className={`sec-title ${
                                     type === 2 || type === 3 ? "title-anim" : "text-anim"
                                 }`}
                             >
-                                Role-Based <span>Solutions.</span>
+                                {type === 3
+                                    ? <>Hybrid Hardware &amp; <span>Service Revenue.</span></>
+                                    : <>Role-Based <span>Solutions.</span></>}
                             </h2>
                         </div>
                     </div>
                 </div>
                 <div className="row row-gap-4">
-                    <PricingPlanItems />
+                    <PricingPlanItems type={type} />
                 </div>
             </div>
             <div className="bg-shape-1">

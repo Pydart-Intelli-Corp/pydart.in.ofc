@@ -1,0 +1,659 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: ALTRAS-1 Intro Section CSS
+----------------------------------------*/
+
+// ── Featured image banner ───────────────────────────────────────
+.altras-feature-image {
+	position: relative;
+	border-radius: 16px;
+	overflow: hidden;
+	height: 420px;
+	margin-block: 2.5rem;
+
+	img {
+		transition: transform 0.9s ease;
+		will-change: transform;
+	}
+
+	&:hover img {
+		transform: scale(1.07);
+	}
+
+	.altras-feature-overlay {
+		position: absolute;
+		inset: 0;
+		background: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0.78) 0%,
+			rgba(0, 0, 0, 0.08) 65%
+		);
+		display: flex;
+		align-items: center;
+		padding: 3rem;
+	}
+
+	.altras-feature-overline {
+		color: var(--tj-color-theme-primary);
+		font-size: 12px;
+		font-weight: 600;
+		letter-spacing: 3px;
+		text-transform: uppercase;
+		display: block;
+		margin-bottom: 1rem;
+	}
+
+	.altras-feature-tagline {
+		color: var(--tj-color-common-white);
+		font-size: clamp(1.3rem, 2.5vw, 2.1rem);
+		max-width: 520px;
+		line-height: 1.35;
+		font-weight: 700;
+	}
+
+	@media #{$md, $sm, $xs} {
+		height: 280px;
+
+		.altras-feature-overlay {
+			padding: 1.5rem;
+		}
+	}
+}
+
+// ── Capabilities sub-heading row ───────────────────────────────
+.altras-caps-heading {
+	margin-bottom: 1.5rem;
+
+	.sub-title {
+		color: var(--tj-color-theme-primary);
+	}
+}
+
+// ── Individual capability cards ────────────────────────────────
+.altras-cap-card {
+	position: relative;
+	border-radius: 14px;
+	overflow: hidden;
+	height: 360px;
+	cursor: default;
+
+	img {
+		transition: transform 0.7s ease;
+		will-change: transform;
+	}
+
+	&:hover img {
+		transform: scale(1.07);
+	}
+
+	.altras-cap-overlay {
+		position: absolute;
+		inset: 0;
+		background: linear-gradient(
+			to top,
+			rgba(0, 0, 0, 0.93) 0%,
+			rgba(0, 0, 0, 0.38) 58%,
+			rgba(0, 0, 0, 0.08) 100%
+		);
+		transition: background 0.45s ease;
+	}
+
+	&:hover .altras-cap-overlay {
+		background: linear-gradient(
+			to top,
+			rgba(0, 0, 0, 0.96) 0%,
+			rgba(0, 0, 0, 0.55) 55%,
+			rgba(0, 0, 0, 0.2) 100%
+		);
+	}
+
+	.altras-cap-content {
+		position: absolute;
+		inset: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding: 2rem;
+	}
+
+	.altras-cap-icon {
+		width: 50px;
+		height: 50px;
+		background: var(--tj-color-theme-primary);
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 1rem;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		flex-shrink: 0;
+
+		i {
+			color: var(--tj-color-common-white);
+			font-size: 22px;
+		}
+	}
+
+	&:hover .altras-cap-icon {
+		transform: scale(1.12);
+		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+	}
+
+	.altras-cap-title {
+		color: var(--tj-color-common-white);
+		font-size: 1.1rem;
+		font-weight: 700;
+		margin-bottom: 0.45rem;
+		line-height: 1.3;
+	}
+
+	.altras-cap-desc {
+		color: rgba(255, 255, 255, 0.72);
+		font-size: 0.875rem;
+		line-height: 1.65;
+		margin: 0;
+		transition: color 0.35s ease;
+	}
+
+	&:hover .altras-cap-desc {
+		color: rgba(255, 255, 255, 0.9);
+	}
+
+	@media #{$sm, $xs} {
+		height: 300px;
+	}
+}
+
+.altras-overview-stack {
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+}
+
+.altras-overview-card {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	border-radius: 20px;
+	overflow: hidden;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	background: rgba(255, 255, 255, 0.03);
+	min-height: 340px;
+
+	&.is-reverse {
+		.altras-overview-content {
+			order: 2;
+		}
+
+		.altras-overview-media {
+			order: 1;
+		}
+	}
+
+	@media #{$md, $sm, $xs} {
+		grid-template-columns: 1fr;
+		min-height: auto;
+	}
+
+	@media #{$xs} {
+		border-radius: 16px;
+	}
+}
+
+.altras-overview-content {
+	padding: 3rem 3.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	@media #{$md, $sm, $xs} {
+		order: 1 !important;
+		padding: 2rem 1.75rem;
+	}
+
+	@media #{$xs} {
+		padding: 1.5rem 1.25rem;
+	}
+}
+
+.altras-overview-media {
+	position: relative;
+	overflow: hidden;
+	min-height: 320px;
+
+	@media #{$md, $sm, $xs} {
+		order: 2 !important;
+		min-height: 240px;
+	}
+
+	@media #{$xs} {
+		min-height: 220px;
+	}
+}
+
+// ── Ecosystem: Mission & Vision cards ──────────────────────────
+.eco-mv-row {
+	margin-top: 2.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.eco-mv-card {
+	background: linear-gradient(
+		145deg,
+		#1e8a8a 0%,
+		#156767 100%
+	);
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	border-radius: 16px;
+	padding: 2.5rem;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	transition: transform 0.35s ease, box-shadow 0.35s ease;
+
+	// top accent bar
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 3px;
+		background: rgba(255, 255, 255, 0.45);
+		border-radius: 16px 16px 0 0;
+	}
+
+	// decorative circle glow in corner
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: -70px;
+		right: -70px;
+		width: 180px;
+		height: 180px;
+		border-radius: 50%;
+		border: 36px solid rgba(255, 255, 255, 0.15);
+		opacity: 0.4;
+		pointer-events: none;
+	}
+
+	&:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 24px 56px rgba(30, 138, 138, 0.35);
+	}
+
+	@media #{$md, $sm, $xs} {
+		padding: 1.75rem;
+	}
+}
+
+.eco-mv-label {
+	display: block;
+	color: rgba(255, 255, 255, 0.9);
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	margin-bottom: 1.25rem;
+}
+
+.eco-mv-text {
+	color: rgba(255, 255, 255, 0.75);
+	font-size: 1rem;
+	line-height: 1.85;
+	margin: 0;
+}
+
+// ── Why ALTRAS Matters: Stat cards (eco-mv-card style, compact) ──
+.why-altras-stat-card {
+	background: linear-gradient(145deg, #1e8a8a 0%, #156767 100%);
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	border-radius: 16px;
+	padding: 2.75rem 1.75rem;
+	position: relative;
+	overflow: hidden;
+	transition: transform 0.35s ease, box-shadow 0.35s ease;
+	display: flex;
+	align-items: center;
+	gap: 1.25rem;
+
+	// top accent bar
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 3px;
+		background: rgba(255, 255, 255, 0.45);
+		border-radius: 16px 16px 0 0;
+	}
+
+	// decorative circle glow
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: -50px;
+		right: -50px;
+		width: 130px;
+		height: 130px;
+		border-radius: 50%;
+		border: 28px solid rgba(255, 255, 255, 0.12);
+		opacity: 0.4;
+		pointer-events: none;
+	}
+
+	&:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 20px 48px rgba(30, 138, 138, 0.35);
+	}
+
+	@media #{$md, $sm, $xs} {
+		padding: 1.25rem 1.5rem;
+		gap: 1rem;
+	}
+}
+
+.why-altras-stat-icon {
+	flex-shrink: 0;
+	width: 48px;
+	height: 48px;
+	background: rgba(255, 255, 255, 0.12);
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	i {
+		color: rgba(255, 255, 255, 0.9);
+		font-size: 22px;
+	}
+}
+
+.why-altras-stat-body {
+	flex: 1;
+	min-width: 0;
+}
+
+.why-altras-stat-label {
+	display: block;
+	color: rgba(255, 255, 255, 0.9);
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	margin-bottom: 0.3rem;
+}
+
+.why-altras-stat-count {
+	line-height: 1;
+	margin-bottom: 0.25rem;
+
+	// reduce funfact counter size to fit compact card
+	.inline-content {
+		display: flex;
+		align-items: baseline;
+		gap: 2px;
+	}
+
+	.countup-number,
+	.odometer {
+		font-size: clamp(1.6rem, 3vw, 2rem) !important;
+		color: #ffffff !important;
+		line-height: 1 !important;
+	}
+
+	.count-plus {
+		font-size: clamp(1rem, 2vw, 1.3rem) !important;
+		color: #ffffff !important;
+	}
+}
+
+.why-altras-stat-desc {
+	color: rgba(255, 255, 255, 0.65);
+	font-size: 0.8rem;
+	line-height: 1.45;
+	margin: 0;
+}
+
+// Mobile-only overrides for the stat-card row
+.why-altras-stat-row {
+	@media #{$sm, $xs} {
+		height: auto !important;
+		row-gap: 1rem !important;
+	}
+}
+
+// ── Ecosystem: Roadmap phase cards ───────────────────────────────
+.eco-phase-row {
+	margin-top: 0;
+}
+
+.eco-phase-card {
+	position: relative;
+	background: linear-gradient(
+		160deg,
+		var(--tj-color-theme-dark) 0%,
+		var(--tj-color-theme-dark-2) 100%
+	);
+	border: 1px solid rgba(255, 255, 255, 0.07);
+	border-bottom: 3px solid var(--tj-color-theme-primary);
+	border-radius: 16px;
+	padding: 2rem 1.75rem;
+	height: 100%;
+	overflow: hidden;
+	transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+
+	&:hover {
+		transform: translateY(-7px);
+		box-shadow: 0 28px 60px rgba(0, 0, 0, 0.32);
+		border-bottom-color: var(--tj-color-theme-primary);
+
+		.eco-phase-glow {
+			opacity: 1;
+		}
+
+		.eco-phase-icon {
+			background: var(--tj-color-theme-primary);
+
+			i {
+				color: var(--tj-color-common-white);
+			}
+		}
+	}
+
+	@media #{$md, $sm, $xs} {
+		padding: 1.5rem;
+	}
+}
+
+.eco-phase-icon {
+	width: 54px;
+	height: 54px;
+	border-radius: 14px;
+	background: rgba(255, 255, 255, 0.06);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1.5rem;
+	transition: background 0.35s ease;
+
+	i {
+		color: var(--tj-color-theme-primary);
+		font-size: 24px;
+		transition: color 0.35s ease;
+	}
+}
+
+.eco-phase-tag {
+	display: block;
+	color: var(--tj-color-theme-primary);
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: 3.5px;
+	text-transform: uppercase;
+	margin-bottom: 0.65rem;
+}
+
+.eco-phase-title {
+	color: var(--tj-color-common-white);
+	font-size: 1.1rem;
+	font-weight: 700;
+	line-height: 1.35;
+	margin-bottom: 0.85rem;
+}
+
+.eco-phase-desc {
+	color: rgba(255, 255, 255, 0.62);
+	font-size: 0.875rem;
+	line-height: 1.75;
+	margin: 0;
+}
+
+.eco-phase-glow {
+	position: absolute;
+	bottom: -40px;
+	right: -40px;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	background: radial-gradient(
+		circle,
+		var(--tj-color-theme-primary) 0%,
+		transparent 70%
+	);
+	opacity: 0;
+	transition: opacity 0.45s ease;
+	pointer-events: none;
+	filter: blur(28px);
+}
+
+// ── Ecosystem: Roadmap divider ─────────────────────────────────
+.eco-roadmap-divider {
+	display: flex;
+	align-items: center;
+	gap: 1.25rem;
+	margin-top: 3.5rem;
+	margin-bottom: 2rem;
+
+	span {
+		color: var(--tj-color-theme-primary);
+		font-size: 11px;
+		font-weight: 700;
+		letter-spacing: 4px;
+		text-transform: uppercase;
+		white-space: nowrap;
+		flex-shrink: 0;
+	}
+
+	&::before,
+	&::after {
+		content: "";
+		flex: 1;
+		height: 1px;
+		background: rgba(255, 255, 255, 0.1);
+	}
+}
+
+// ── Development Roadmap: Aeline blog-card style ────────────────
+.roadmap-blog-card {
+	position: relative;
+	width: 100%;
+	height: 380px;
+	border-radius: 20px;
+	overflow: hidden;
+	cursor: default;
+	background: #111;
+
+	&:hover {
+		.roadmap-blog-img {
+			transform: scale(1.04);
+		}
+	}
+}
+
+.roadmap-blog-img {
+	transition: transform 0.6s ease;
+}
+
+.roadmap-blog-overlay {
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 0.08) 0%,
+		rgba(0, 0, 0, 0.35) 40%,
+		rgba(0, 0, 0, 0.88) 100%
+	);
+	z-index: 1;
+	border-radius: 20px;
+}
+
+.roadmap-blog-top {
+	position: absolute;
+	top: 1.25rem;
+	left: 1.25rem;
+	right: 1.25rem;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.roadmap-blog-step {
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.roadmap-blog-status {
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	border: 1px solid;
+	border-radius: 100px;
+	padding: 4px 12px;
+	background: rgba(0, 0, 0, 0.35);
+	backdrop-filter: blur(6px);
+}
+
+.roadmap-blog-content {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	padding: 1.5rem 1.75rem;
+}
+
+.roadmap-blog-title {
+	font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+	font-weight: 700;
+	color: #ffffff;
+	line-height: 1.3;
+	margin: 0 0 0.5rem;
+}
+
+.roadmap-blog-desc {
+	font-size: 0.85rem;
+	color: rgba(255, 255, 255, 0.6);
+	line-height: 1.6;
+	margin: 0;
+}
+
+// Make last card full-width image taller on small screens
+@media (min-width: 992px) {
+	.col-lg-12 .roadmap-blog-card {
+		height: 280px;
+	}
+}
+
+@media (max-width: 767px) {
+	.roadmap-blog-card {
+		height: 300px;
+	}
+}

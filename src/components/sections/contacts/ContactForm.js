@@ -1,9 +1,28 @@
 "use client";
 import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
 import ReactNiceSelect from "@/components/shared/inputs/ReactNiceSelect";
-import Link from "next/link";
+
+const PYDART_EMAIL = "info@pydart.com";
+const gmailComposeUrl = (subject, body) =>
+    `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(PYDART_EMAIL)}` +
+    (subject ? `&su=${encodeURIComponent(subject)}` : "") +
+    (body ? `&body=${encodeURIComponent(body)}` : "");
 
 const ContactForm = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const form = e.target;
+        const name = form.cfName2.value.trim();
+        const email = form.cfEmail2.value.trim();
+        const phone = form.cfPhone2.value.trim();
+        const message = form.cfMessage2.value.trim();
+
+        const subject = `Contact Form Enquiry from ${name || "Website Visitor"}`;
+        const body = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`;
+
+        window.open(gmailComposeUrl(subject, body), "_blank", "noopener,noreferrer");
+    };
+
     return (
         <section className="tj-contact-section section-gap section-gap-x">
             <div className="container">
@@ -15,31 +34,15 @@ const ContactForm = () => {
                                 <div className="location-indicator loc-1">
                                     <div className="location-tooltip">
                                         <span>Head office:</span>
-                                        <p>993 Renner Burg, West Rond, MT 94251-030, USA.</p>
-                                        <Link href="tel:10095447818">P: +1 (009) 544-7818</Link>
-                                        <Link href="mailto:support@bexon.com">
-                                            M: support@bexon.com
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className="location-indicator loc-2">
-                                    <div className="location-tooltip">
-                                        <span>Regional office:</span>
-                                        <p>Hessisch Lichtenau 37235, Kassel, Germany.</p>
-                                        <Link href="tel:10098801810">P: +1 (009) 880-1810</Link>
-                                        <Link href="mailto:support@bexon.com">
-                                            M: support@bexon.com
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className="location-indicator loc-3">
-                                    <div className="location-tooltip">
-                                        <span>Regional office:</span>
-                                        <p>32 Altamira, State of Pará, Brazil.</p>
-                                        <Link href="tel:10095447818">P: +1 (009) 544-7818</Link>
-                                        <Link href="mailto:support@bexon.com">
-                                            M: support@bexon.com
-                                        </Link>
+                                        <p>Kerala Technology Innovation Zone, Kinfra Hi-Tech Park Main Rd, HMT Colony, P.O, Kalamassery, Kochi, Kerala 683503</p>
+                                        <a href="tel:7356765036">P: 7356765036</a>
+                                        <a
+                                            href={gmailComposeUrl()}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            M: info@pydart.com
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -58,7 +61,7 @@ const ContactForm = () => {
                                     Drop Us a <span>Line.</span>
                                 </h2>
                             </div>
-                            <form id="contact-form-2">
+                            <form id="contact-form-2" onSubmit={handleSubmit}>
                                 <div className="row wow fadeInUp" data-wow-delay=".5s">
                                     <div className="col-sm-6">
                                         <div className="form-input">

@@ -1,6 +1,19 @@
+"use client";
 import Link from "next/link";
 
 const FooterBasic = () => {
+    const handleSubscribe = (e) => {
+        e.preventDefault();
+        const email = e.target.email.value.trim();
+        if (!email) return;
+        const subject = encodeURIComponent("Newsletter Subscription from Pydart Website");
+        const body = encodeURIComponent(`Hello,\n\nPlease subscribe me to the Pydart newsletter.\n\nMy email: ${email}\n\nThank you.`);
+        window.open(
+            `https://mail.google.com/mail/?view=cm&fs=1&to=info%40pydart.com&su=${subject}&body=${body}`,
+            "_blank",
+            "noopener,noreferrer"
+        );
+    };
     return (
         <footer className="tj-footer-section footer-1 section-gap-x">
             <div className="footer-main-area">
@@ -34,25 +47,28 @@ const FooterBasic = () => {
                                 className="footer-widget widget-nav-menu wow fadeInUp"
                                 data-wow-delay=".3s"
                             >
-                                <h5 className="title">Services</h5>
+                                <h5 className="title">Explore</h5>
                                 <ul>
                                     <li>
-                                        <Link href="/services/1">Customer Experience</Link>
+                                        <Link href="/product/altras-1">ALTRAS-1 Overview</Link>
                                     </li>
                                     <li>
-                                        <Link href="/services/2">Training Programs</Link>
+                                        <Link href="/services">Services</Link>
                                     </li>
                                     <li>
-                                        <Link href="/services/3">Business Strategy</Link>
+                                        <Link href="/technology">Technology</Link>
                                     </li>
                                     <li>
-                                        <Link href="/services/4">Training Program</Link>
+                                        <Link href="/safety">Safety &amp; Compliance</Link>
                                     </li>
                                     <li>
-                                        <Link href="/services/5">ESG Consulting</Link>
+                                        <Link href="/about">About Pydart</Link>
                                     </li>
                                     <li>
-                                        <Link href="/services/6">Development Hub</Link>
+                                        <Link href="/faq">FAQs</Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/blogs">Blogs</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -68,24 +84,16 @@ const FooterBasic = () => {
                                         <Link href="/contact">Contact us</Link>
                                     </li>
                                     <li>
-                                        <Link href="/team">Team Member</Link>
+                                        <Link href="/blogs">Blogs</Link>
                                     </li>
                                     <li>
-                                        <Link href="#">Recognitions</Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/careers">
-                                            Careers <span className="badge">New</span>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/blogs">News</Link>
+                                        <Link href="/faq">FAQs</Link>
                                     </li>
                                     <li>
                                         <Link href="/privacy-policy">Privacy Policy</Link>
                                     </li>
                                 <li>
-                                    <Link href="/terms-and-conditions">Terms & Conditions</Link>
+                                    <Link href="/terms-and-conditions">Terms &amp; Conditions</Link>
                                 </li>
                             </ul>
                             </div>
@@ -97,11 +105,12 @@ const FooterBasic = () => {
                             >
                                 <h3 className="title">Subscribe to Our Newsletter.</h3>
                                 <div className="subscribe-form">
-                                    <form action="#">
+                                    <form onSubmit={handleSubscribe}>
                                         <input
                                             type="email"
                                             name="email"
                                             placeholder="Enter email"
+                                            required
                                         />
                                         <button type="submit">
                                             <i className="tji-plane"></i>
@@ -128,20 +137,24 @@ const FooterBasic = () => {
                                 <div className="footer-contact">
                                     <ul>
                                         <li>
-                                            <Link href="tel:10095447818">
+                                            <Link href="tel:+917356765036">
                                                 <span className="icon">
                                                     <i className="tji-phone-2"></i>
                                                 </span>
-                                                <span className="text">+1 (009) 544-7818</span>
+                                                <span className="text">+91 7356765036</span>
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href="mailto:info@bexon.com">
+                                            <a
+                                                href="https://mail.google.com/mail/?view=cm&fs=1&to=info%40pydart.com"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
                                                 <span className="icon">
                                                     <i className="tji-envelop-2"></i>
                                                 </span>
-                                                <span className="text">info@bexon.com</span>
-                                            </Link>
+                                                <span className="text">Info@pydart.com</span>
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>

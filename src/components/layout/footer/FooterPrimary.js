@@ -1,8 +1,20 @@
+"use client";
 import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
 import MarqueeSlider1 from "@/components/shared/marquee/MarqueeSlider1";
 import Link from "next/link";
 
 const FooterPrimary = () => {
+    const handleSubscribe = (e) => {
+        e.preventDefault();
+        const email = e.target.email.value.trim();
+        const subject = "New subscriber from Pydart website";
+        const body = `Hello,\n\nPlease subscribe me to Pydart updates.\n\nMy email: ${email}\n\nThank you.`;
+        const url =
+            `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent("info@pydart.com")}` +
+            `&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.open(url, "_blank", "noopener,noreferrer");
+    };
+
     return (
         <footer className="tj-footer-section footer-2 section-gap-x">
             <div className="footer-top">
@@ -17,11 +29,12 @@ const FooterPrimary = () => {
                                 <img src="/logo/pydart_logo.png" alt="PyDart Logo" />
                                 </div>
                                 <div className="subscribe-form">
-                                    <form action="#">
+                                    <form onSubmit={handleSubscribe}>
                                         <input
                                             type="email"
                                             name="email"
                                             placeholder="Enter email"
+                                            required
                                         />
                                         <ButtonPrimary text={"Send Message"} type="submit" />
                                     </form>
@@ -70,13 +83,10 @@ const FooterPrimary = () => {
                                         <Link href="/product/altras-1">ALTRAS-1 Overview</Link>
                                     </li>
                                     <li>
-                                        <Link href="/how-it-works">How It Works – ZRV</Link>
-                                    </li>
-                                    <li>
                                         <Link href="/technology">Technology</Link>
                                     </li>
                                     <li>
-                                        <Link href="/safety">Safety & Compliance</Link>
+                                        <Link href="/safety">Safety &amp; Compliance</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -89,22 +99,25 @@ const FooterPrimary = () => {
                                 <h5 className="title">Solutions</h5>
                                 <ul>
                                     <li>
-                                        <Link href="/solutions/hospital-administrators">Hospital Administrators</Link>
+                                        <Link href="/about">About Pydart</Link>
                                     </li>
                                     <li>
-                                        <Link href="/solutions/nursing-staff">Nursing Staff</Link>
+                                        <Link href="/services">Services</Link>
                                     </li>
                                     <li>
-                                        <Link href="/solutions/biomedical-engineers">Biomedical Engineers</Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/resources/blogs">Blogs</Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/resources/whitepapers">Whitepapers</Link>
+                                        <Link href="/blogs">Blogs</Link>
                                     </li>
                                     <li>
                                         <Link href="/faq">FAQs</Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/contact">Contact Us</Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/privacy-policy">Privacy Policy</Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/terms-and-conditions">Terms &amp; Conditions</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -117,13 +130,17 @@ const FooterPrimary = () => {
                                 <h5 className="title">Our Office</h5>
                                 <div className="footer-contact-info">
                                     <div className="contact-item">
-                                        <span>Kochi, Kerala, India</span>
+                                        <span>Kerala Technology Innovation Zone, Kinfra Hi-Tech Park Main Rd, HMT Colony, P.O, Kalamassery, Kochi, Kerala 683503</span>
                                     </div>
                                     <div className="contact-item">
-                                        <Link href="tel:+919876543210">P: +91 XXXXXXXXXX</Link>
-                                        <Link href="mailto:info@pydart.com">
-                                            M: info@pydart.com
-                                        </Link>
+                                        <Link href="tel:+917356765036">P: +91 7356765036</Link>
+                                        <a
+                                            href="https://mail.google.com/mail/?view=cm&fs=1&to=info%40pydart.com"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            M: Info@pydart.com
+                                        </a>
                                     </div>
                                     <div className="contact-item">
                                         <span>

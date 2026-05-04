@@ -78,7 +78,7 @@ const HeroSlider = () => {
                                     <h1 className="slider-title">{title}</h1>
                                     <div className="slider-desc">{desc}</div>
                                     <div className="slider-btn">
-                                        <ButtonPrimary text={"How ALTRAS-1 Works"} url={"/how-it-works"} className="btn-secondary" />
+                                        <ButtonPrimary text={"How ALTRAS-1 Works"} url={"#architecture"} className="btn-secondary" />
                                     </div>
                                 </div>
                             </div>

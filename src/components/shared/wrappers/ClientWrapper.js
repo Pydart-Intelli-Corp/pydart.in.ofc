@@ -29,9 +29,10 @@ const ClientWrapper = () => {
         import("wow.js").then(({ default: WOW }) => {
             new WOW().init();
         });
-        smoothScrollToTop();
+        const cleanupScrollToTop = smoothScrollToTop();
         const cleanup = tjMagicCursorAnimation();
         return () => {
+            if (cleanupScrollToTop) cleanupScrollToTop();
             if (cleanup) cleanup();
         };
     }, []);

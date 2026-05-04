@@ -6,88 +6,72 @@
 	},
 	{
 		"id": 2,
-		"name": "Product",
+		"name": "ALTRAS-1",
 		"path": "/product/altras-1",
 		"submenu": [
 			{
 				"id": 1,
 				"name": "ALTRAS-1 Overview",
-				"path": "/product/altras-1"
+				"path": "/product/altras-1#altras-overview"
 			},
 			{
 				"id": 2,
-				"name": "How It Works – ZRV",
-				"path": "/how-it-works"
+				"name": "System Architecture",
+				"path": "/product/altras-1#architecture"
 			},
 			{
 				"id": 3,
-				"name": "Technical Specifications",
-				"path": "/product/altras-1#specifications"
+				"name": "Core Capabilities",
+				"path": "/product/altras-1#capabilities"
 			}
 		]
 	},
 	{
 		"id": 3,
 		"name": "Technology",
-		"path": "/technology"
-	},
-	{
-		"id": 4,
-		"name": "Safety & Compliance",
-		"path": "/safety"
-	},
-	{
-		"id": 5,
-		"name": "Solutions",
-		"path": "/solutions",
+		"path": "/technology",
 		"submenu": [
 			{
 				"id": 1,
-				"name": "Hospital Administrators",
-				"path": "/solutions/hospital-administrators"
+				"name": "Technology Approach",
+				"path": "/technology#technology-approach"
 			},
 			{
 				"id": 2,
-				"name": "Nursing Staff",
-				"path": "/solutions/nursing-staff"
+				"name": "Robotics Stack",
+				"path": "/technology#stack"
 			},
 			{
 				"id": 3,
-				"name": "Biomedical Engineers",
-				"path": "/solutions/biomedical-engineers"
+				"name": "Future Ecosystem",
+				"path": "/technology#ecosystem"
 			}
 		]
 	},
 	{
-		"id": 6,
-		"name": "Resources",
-		"path": "/resources/blogs",
+		"id": 4,
+		"name": "Company",
+		"path": "/about",
 		"submenu": [
 			{
 				"id": 1,
-				"name": "Blogs",
-				"path": "/resources/blogs",
-				"badge": "NEW"
+				"name": "About Pydart",
+				"path": "/about#about-pydart"
 			},
 			{
 				"id": 2,
-				"name": "Whitepapers",
-				"path": "/resources/whitepapers"
+				"name": "Mission & Vision",
+				"path": "/about#mission"
+			},
+			{
+				"id": 3,
+				"name": "Partnerships",
+				"path": "/about#partnerships"
 			}
 		]
 	},
 	{
-		"id": 7,
-		"name": "About Us",
-		"path": "/about"
-	},
-	{
-		"id": 8,
-		"name": "Investors",
-		"path": "/investors"
-	},
-	{
-		"id": 9,
+		"id": 5,
 		"name": "Contact",
 		"path": "/contact"
 	}

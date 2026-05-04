@@ -7,13 +7,17 @@ const ServicesGrid = () => {
     const services = getALlServices()?.slice(0, 4);
 
     return (
-        <section className="tj-service-section service-2 section-gap section-gap-x slidebar-stickiy-container">
+        <section
+            id="capabilities"
+            className="tj-service-section service-2 section-gap section-gap-x slidebar-stickiy-container"
+            style={{ scrollMarginTop: "120px" }}
+        >
             <div className="container">
                 <div className="row">
                     <div className="col-lg-4">
                         <div className="content-wrap  slidebar-stickiy">
                             <div className="sec-heading style-2">
-                                <span className="sub-title wow fadeInUp" data-wow-delay=".3s">
+                                <span className="sub-title wow fadeInUp" data-wow-delay=".3s" style={{ backgroundColor: 'rgba(255,255,255,0.12)', color: 'var(--tj-color-theme-primary)' }}>
                                     Core Capabilities
                                 </span>
                                 <h2 className="sec-title text-white text-anim">

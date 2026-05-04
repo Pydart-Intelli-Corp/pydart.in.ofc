@@ -19,7 +19,7 @@ export default function Services() {
                 <div id="smooth-content">
                     <main>
                         <HeaderSpace />
-                        <HeroInner title={"Services"} text={"Services"} />
+                        <HeroInner title={"Services"} text={"Services"} heroImage={"/images/bg/services-banner.webp"} />
                         <ServicesPrimary />
                         <ContactForm />
                         <PricingPlan type={3} />

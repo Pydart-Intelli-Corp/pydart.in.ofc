@@ -38,29 +38,29 @@ const TeamGrid = ({ type }) => {
                 ) : (
                     <div className="row">
                         <div className="col-12">
-                            <div
-                                className={`sec-heading text-center  ${
-                                    type === 3 ? "" : "style-2"
-                                }`}
-                            >
-                                <span className="sub-title wow fadeInUp" data-wow-delay=".3s">
-                                    Solutions Overview
-                                    {type === 3 ? <i className="tji-box"></i> : ""}
-                                </span>
-                                {type === 3 ? (
-                                    <h2 className="sec-title title-anim">
-                                        Success <span>Stories</span> Fuel our Innovation.
-                                    </h2>
-                                ) : (
-                                    <h2
-                                        className={`sec-title ${
-                                            type === 2 ? "title-anim" : "text-anim"
-                                        }`}
-                                    >
+                            {type === 3 ? (
+                                <div className="sec-heading-wrap">
+                                    <span className="sub-title wow fadeInUp" data-wow-delay=".3s">
+                                        Solutions Overview
+                                    </span>
+                                    <div className="heading-wrap-content">
+                                        <div className="sec-heading">
+                                            <h2 className="sec-title title-anim">
+                                                Success <span>Stories</span> Fuel our Innovation.
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            ) : (
+                                <div className="sec-heading text-center style-2">
+                                    <span className="sub-title wow fadeInUp" data-wow-delay=".3s">
+                                        Solutions Overview
+                                    </span>
+                                    <h2 className="sec-title text-anim">
                                         People Behind <span>Bexon.</span>
                                     </h2>
-                                )}
-                            </div>
+                                </div>
+                            )}
                         </div>
                     </div>
                 )}

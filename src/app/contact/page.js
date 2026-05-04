@@ -17,9 +17,10 @@ export default function Contact() {
                 <div id="smooth-content">
                     <main>
                         <HeaderSpace />
-                        <HeroInner title={"Contact Us"} text={"Contact Us"} />
+                        <HeroInner title={"Contact Us"} text={"Contact Us"} heroImage={"/images/bg/contact-banner.webp"} />
                         <ContactTop />
                     <ContactForm />
+                        <div style={{ marginTop: "2rem" }}></div>
                         <Cta />
                     </main>
 <FooterBasic />
